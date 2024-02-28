@@ -1,0 +1,13 @@
+My thesis delves into the practical applications of technology, focusing on security and accessibility. The exploration includes:
+
+Safe Room Security:
+Investigating and implementing advanced security measures for secure spaces using computer vision and machine learning to prevent robbery.
+
+EasyML: Simplifying Machine Learning for Non-Technical Users:
+Developing a user-friendly platform to make machine learning accessible to individuals without technical backgrounds, emphasizing simplicity in the process.
+
+Third Eye: Enhancing Accessibility for the Visually Impaired:
+Implementing a project using Python and OpenCV for obstacle detection, image processing, and text-to-speech conversion, aiming to improve accessibility for the visually impaired.
+
+Full Stack Development Project: Streamlining Web Solutions:
+Actively contributing to a Full Stack Development project, creating seamless web applications by integrating visually appealing front-end design with efficient back-end processes.
