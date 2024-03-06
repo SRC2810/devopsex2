@@ -11,3 +11,7 @@ Implementing a project using Python and OpenCV for obstacle detection, image pro
 
 Full Stack Development Project: Streamlining Web Solutions:
 Actively contributing to a Full Stack Development project, creating seamless web applications by integrating visually appealing front-end design with efficient back-end processes.
+
+Insertion: Adding a character to the string.
+Deletion: Removing a character from the string.
+Substitution: Replacing one character with another.
