@@ -1,0 +1,88 @@
+Absolutely! Let's start from the very beginning.
+
+Step 1: Install Jenkins
+You can install Jenkins on various operating systems like Windows, macOS, or Linux. Here's how to do it on Ubuntu:
+
+Update your package index:
+not
+
+Copy code
+sudo apt update
+Install Java:
+not
+
+Copy code
+sudo apt install default-jre
+Add the Jenkins repository key to the system:
+down
+
+Copy code
+wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+Append the Debian package repository address to the server's sources.list:
+down
+
+Copy code
+echo deb https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list
+Update your package index again:
+down
+
+Copy code
+sudo apt update
+In
+down
+
+Copy code
+sudo apt install jenkins
+Start Jenkins:
+bash
+
+Copy code
+sudo systemctl start jenkins
+Enable Jenkins to start on boot:
+b
+
+Copy code
+sudo systemctl enable jenkins
+
+`
+Now, Jenkins should be installed and running on your system.
+
+Step 2: Set Up Jenkins
+Open your web browser and go to http://localhost:8080 (if Jenkins is installed locally) or use your server's IP address or domain name.
+You'll be prompted to unlock Jenkins. To do this, you need to retrieve the initial admin password. You can find it by running:
+bash
+
+Copy code
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+Copy the password and paste it into the Jenkins unlock screen.
+Follow the instructions to complete the setup wizard. You can install suggested plugins or select specific plugins according to your needs.
+Create an admin user and click on Save and Finish.
+Step 3: Create a New Pipeline Job
+Click on Create new jobs.
+Enter a name for your job (e.g., "MyFirstPipeline") and select Pipeline.
+Click on OK.
+Step 4: Write Your Pipeline Script
+Scroll down to the Pipeline section.
+Choose Pipeline script as the Definition.
+Write your pipeline script in the text area. Here's a simple example:
+groovy
+
+Copy code
+pipeline {
+    agent any
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello, world!'
+            }
+        }
+    }
+}
+This script defines a single stage named Hello that prints "Hello, world!".
+
+Step 5: Save and Run Your Pipeline
+Click on Save.
+Click on Build Now to start your pipeline.
+You'll see the pipeline being executed in the Jenkins dashboard.
+
+Congratulations! You've created and executed your first Jenkins pipeline from scratch. You can now explore further features, plugins, and configurations to customize your pipelines according to your project requirements.
